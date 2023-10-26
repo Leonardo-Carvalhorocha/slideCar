@@ -71,7 +71,7 @@ export class Slide {
   // Slides config
 
   slidePosition(slide) {
-    const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
+    const margin = (this.wrapper.offsetWidth - slide.offsetWidth);
     return -(slide.offsetLeft - margin);
   }
 
