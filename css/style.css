@@ -119,3 +119,9 @@ img {
 .arrow-nav button.prev {
   transform: rotate(-180deg);
 }
+
+@media (max-width: 950px) {
+  .arrow-nav {
+    display: none;
+  }
+}
