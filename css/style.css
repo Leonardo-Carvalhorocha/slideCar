@@ -20,6 +20,7 @@ img {
 
 .slide {
   display: flex;
+  justify-items: center;
 }
 
 .slide:hover {
@@ -30,6 +31,8 @@ img {
   flex-shrink: 0;
   max-width: 100%;
   margin: 0;
+  display: grid;
+  justify-content: center;
 
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0,0,0,.4);
