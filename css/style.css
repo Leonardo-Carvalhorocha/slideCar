@@ -16,6 +16,8 @@ img {
 
 .slide-wrapper {
   overflow: hidden;
+  display: grid;
+  justify-content: center;
 }
 
 .slide {
