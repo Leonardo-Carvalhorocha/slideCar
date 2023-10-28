@@ -1,0 +1,23 @@
+header {
+  background: var(--p0);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+[data-menu='list'] {
+  gap: 20px;
+  padding: 16px;
+  display: flex;
+}
+
+[data-menu='list'] a {
+  color: var(--p4);
+  font-size: 22px;
+}
