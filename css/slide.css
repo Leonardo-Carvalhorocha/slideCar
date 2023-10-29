@@ -111,3 +111,7 @@
   background: #000;
   padding: 10px;
 }
+
+.container-slide button {
+  text-align: center;
+}
