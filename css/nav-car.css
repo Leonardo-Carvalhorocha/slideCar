@@ -1,16 +1,14 @@
 #container-car {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
   max-width: 1600px;
   margin: 20px auto;
   padding: 0 16px;
+  gap: 20px;
 }
 
 #nav-car {
   display: flex;
-  flex-wrap: wrap;
 }
 
 #nav-car ul {
@@ -36,6 +34,14 @@
 }
 
 @media(max-width: 1000px) {
+  #container-car {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #nav-car {
+    display: flex;
+    flex-wrap: wrap;
+  }
   #nav-car ul{
     display: flex;
     margin-bottom: 10px;

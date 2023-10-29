@@ -52,10 +52,26 @@
   background: linear-gradient(var(--p2), var(--p3));
 }
 
-.form button:hover {
+.form button:hover, .whatsapp:hover{
   transform: scale(110%);
 }
 
+#contato02 {
+  display: grid;
+  justify-items: center;
+}
+
+.whatsapp {
+  display: flex;
+  gap: 6px;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  background: linear-gradient(#1D8A14, #1D8A14);
+  color: #042105;
+}
 
 @media(max-width: 500px) {
   .form {
