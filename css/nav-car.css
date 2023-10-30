@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   max-width: 1600px;
-  margin: 20px auto;
-  padding: 0 16px;
+  margin: 0px auto;
+  padding: 20px 16px;
   gap: 20px;
 }
 
