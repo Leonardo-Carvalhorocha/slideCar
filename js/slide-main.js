@@ -30,7 +30,9 @@ export default class slideMain {
   }
 
   init() {
-    this.temporizadorSlide();
+    if (this.imgs && this.slide) {
+      this.temporizadorSlide();
+    }
     return this;
   }
 };
