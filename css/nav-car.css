@@ -1,6 +1,7 @@
 #container-car {
   display: flex;
-  justify-content: space-between;
+  background: var(--p0);
+  justify-content: center;
   max-width: 1600px;
   margin: 0px auto;
   padding: 20px 16px;
@@ -15,6 +16,7 @@
   display: grid;
   gap: 10px;
   width: 140px;
+  position: relative;
 }
 
 #nav-car ul li {
