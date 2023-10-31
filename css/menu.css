@@ -21,6 +21,22 @@ header {
 [data-menu='list'] a {
   color: var(--p4);
   font-size: 22px;
+  position: relative;
+}
+
+[data-menu='list'] a::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: var(--p4);
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  transition: .3s ease-in-out;
+}
+
+[data-menu='list'] a:hover::before {
+  width: 100%;
 }
 
 #btn-car {

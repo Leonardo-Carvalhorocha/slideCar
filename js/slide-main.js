@@ -27,7 +27,7 @@ export default class slideMain {
     setInterval(() => {
       this.count++;
       this.count < 4 ?  this.styleTransform(this.count) : this.count = -1;
-    }, 2000)
+    }, 10000)
   }
 
   init() {
