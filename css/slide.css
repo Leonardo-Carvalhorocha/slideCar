@@ -2,10 +2,6 @@
   overflow: hidden;
 }
 
-.container-slide {
-  margin-top: 120px;
-}
-
 .slide {
   display: flex;
 }
