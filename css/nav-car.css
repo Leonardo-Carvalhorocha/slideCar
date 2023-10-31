@@ -16,7 +16,6 @@
   display: grid;
   gap: 10px;
   width: 140px;
-  position: relative;
 }
 
 #nav-car ul li {
