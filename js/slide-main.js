@@ -7,6 +7,7 @@ export default class slideMain {
 
   styleTransform(index) {
     const imgArray = [...this.imgs];
+    if (this.slidePosition(index) === undefined) return undefined
     imgArray.map((img) => {
       img.style.transform = `translateX(${this.slidePosition(index)}px)`;
     })
@@ -25,8 +26,8 @@ export default class slideMain {
   temporizadorSlide() {
     setInterval(() => {
       this.count++;
-      this.count <= 4 ?  this.styleTransform(this.count) : this.count = -1;
-    }, 10000)
+      this.count < 4 ?  this.styleTransform(this.count) : this.count = -1;
+    }, 2000)
   }
 
   init() {
