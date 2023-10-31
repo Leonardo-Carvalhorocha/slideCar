@@ -6,7 +6,7 @@ import slideMain from './js/slide-main.js';
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
 
-carSelect()
+carSelect();
 
 const slide = new SlideNav('.slide', '.slide-wrapper');
 slide.init();

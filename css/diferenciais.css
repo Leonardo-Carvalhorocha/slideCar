@@ -1,0 +1,54 @@
+.diferencias-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.diferenciais > h1 {
+  text-align: center;
+  font-family: var(--fontFamily);
+}
+
+.diferenciais-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.diferenciais-card div {
+  font-family: var(--fontFamily);
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--p3);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+}
+
+@media(max-width: 1225px) {
+  .diferenciais-card {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 10px;
+  }
+}
+
+@media(max-width: 600px) {
+  .diferenciais-card div {
+    max-width: 300px;
+  }
+  .diferenciais-card h3 {
+    font-size: 18px;
+  }
+  .diferenciais-card p {
+    font-size: 16px;
+  }
+}
+
+@media(max-width: 362px) {
+  .diferenciais-card div {
+    max-width: 240px;
+  }
+}

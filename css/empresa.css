@@ -26,7 +26,7 @@
 }
 
 .empresa-container span::before {
-  content: url('../img/icons/“.svg');
+  content: url('../img/icons/aspas.svg');
   width: 100%;
   font-size: 32px;
   position: absolute;
