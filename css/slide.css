@@ -55,7 +55,7 @@
 .slide li p {
   text-align: center;
   transition: .3s ease;
-  z-index: 200;
+  z-index: 200
 }
 
 .slide li p a{
@@ -68,7 +68,7 @@
   padding: 10px 16px;
   border-radius: 4px;
   font-size: 20px;
-  z-index: 201;
+  z-index: 200;
 }
 
 .slide li p:hover {
