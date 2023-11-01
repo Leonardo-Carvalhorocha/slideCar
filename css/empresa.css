@@ -21,6 +21,19 @@
   position: relative;
 }
 
+.empresa-container h2::before {
+  content: '';
+  width: 12px;
+  height: 4px;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  background: linear-gradient(#DE911E, #AE6902);
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  left: -12px;
+}
+
 .empresa-container span {
   position: relative;
 }
