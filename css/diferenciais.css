@@ -51,6 +51,10 @@
   top: 20px;
 }
 
+.diferenciais-card div h3 {
+  color: var(--p4);
+}
+
 @media(max-width: 1225px) {
   .diferenciais-card {
     grid-template-columns: 1fr;

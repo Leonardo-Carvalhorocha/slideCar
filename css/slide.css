@@ -156,3 +156,13 @@
     display: none;
   }
 }
+
+@media (max-width: 800px) {
+  .slide li h2 {
+    font-size: 20px;
+  }
+  .slide li p a {
+    padding: 8px 14px;
+    font-size: 16px;
+  }
+}
