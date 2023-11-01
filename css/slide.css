@@ -2,6 +2,14 @@
   overflow: hidden;
 }
 
+.container-slide {
+  background: #000;
+  padding: 10px;
+}
+.container-slide button {
+  text-align: center;
+}
+
 .slide {
   display: flex;
 }
@@ -105,13 +113,7 @@
   .arrow-nav {
     display: none;
   }
-}
-
-.container-slide {
-  background: #000;
-  padding: 10px;
-}
-
-.container-slide button {
-  text-align: center;
+  .slide li img {
+    height: auto;
+  }
 }
