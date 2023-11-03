@@ -103,10 +103,12 @@
   padding: 10px 16px;
   background: linear-gradient(var(--p2), var(--p3));
   border-radius: 4px;
+  z-index: 15;
 }
 
 .btn-automovel p {
   transition: .3s ease-in-out;
+  z-index: 10;
 }
 
 .btn-automovel p:hover {
