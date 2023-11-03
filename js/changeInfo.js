@@ -19,7 +19,6 @@ export default function changeInfo() {
   function handleMutation(mutations) {
     mutations.forEach((mutation) => {
       if (mutation.target.classList.contains('active')) {
-        console.log(mutation);
         listaLi();
       }
     });
