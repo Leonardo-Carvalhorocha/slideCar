@@ -85,6 +85,34 @@
   height: auto;
 }
 
+.btn-automovel {
+  display: grid;
+  justify-content: center;
+}
+
+.btn-automovel h2{
+  color: var(--p4);
+  font-family: var(--fontFamily);
+  text-align: center;
+}
+
+.btn-automovel p a{
+  color: var(--p0);
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 16px;
+  background: linear-gradient(var(--p2), var(--p3));
+  border-radius: 4px;
+}
+
+.btn-automovel p {
+  transition: .3s ease-in-out;
+}
+
+.btn-automovel p:hover {
+  transform: scale(110%);
+}
+
 [data-control="slide"] li a {
   display: block;
   width: 12px;

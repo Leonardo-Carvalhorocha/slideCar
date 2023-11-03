@@ -3,6 +3,7 @@ import SlideNav from './js/slide.js';
 import carSelect from './js/car-select.js';
 import slideMain from './js/slide-main.js';
 import scrollSuave from './js/scrollSuave.js';
+import changeInfo from './js/changeInfo.js';
 
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
@@ -20,3 +21,4 @@ slideDesktop.init();
 slideMobile.init();
 
 scrollSuave();
+changeInfo();
