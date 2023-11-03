@@ -6,9 +6,7 @@ export default function changeInfo() {
     li.forEach((li) => {
       if (li.classList.contains('active')) {
         const hrefListaPages = li.children[2].getAttribute('href');
-        console.log(hrefListaPages);
         btnCar.setAttribute('href', hrefListaPages);
-        console.log(btnCar)
       }
     });
   }
