@@ -11,11 +11,6 @@ export default function changeInfo() {
     });
   }
 
-  const observer = new MutationObserver(handleMutation);
-  li.forEach((item) => {
-    observer.observe(item, { attributes: true });
-  });
-
   function handleMutation(mutations) {
     mutations.forEach((mutation) => {
       if (mutation.target.classList.contains('active')) {
@@ -23,4 +18,9 @@ export default function changeInfo() {
       }
     });
   }
+
+  const observer = new MutationObserver(handleMutation);
+  li.forEach((item) => {
+    observer.observe(item, { attributes: true });
+  });
 }

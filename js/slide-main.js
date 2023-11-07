@@ -7,10 +7,11 @@ export default class slideMain {
 
   styleTransform(index) {
     const imgArray = [...this.imgs];
-    if (this.slidePosition(index) === undefined) return undefined
+    if (this.slidePosition(index) === undefined) return undefined;
     imgArray.map((img) => {
       img.style.transform = `translateX(${this.slidePosition(index)}px)`;
-    })
+    });
+    return index;
   }
 
   slidePosition(index) {
@@ -18,16 +19,20 @@ export default class slideMain {
       const position = -element.offsetLeft;
       return {
         position,
-      }
-    })
+      };
+    });
     return slideArray[index].position;
   }
 
   temporizadorSlide() {
     setInterval(() => {
-      this.count++;
-      this.count < 4 ?  this.styleTransform(this.count) : this.count = -1;
-    }, 10000)
+      this.count += 1;
+      if (this.count < 4) {
+        this.styleTransform(this.count);
+      } else {
+        (this.count = -1);
+      }
+    }, 10000);
   }
 
   init() {
@@ -36,4 +41,4 @@ export default class slideMain {
     }
     return this;
   }
-};
+}

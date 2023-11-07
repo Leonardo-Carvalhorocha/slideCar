@@ -2,9 +2,9 @@ import debounce from './debounce.js';
 
 export class Slide {
   constructor(slide, wrapper) {
-    this.slide = document.querySelector(slide)
+    this.slide = document.querySelector(slide);
     this.wrapper = document.querySelector(wrapper);
-    this.dist = { finalPosition: 0, startX: 0, movement: 0 }
+    this.dist = { finalPosition: 0, startX: 0, movement: 0 };
     this.activeClass = 'active';
     this.changeEvent = new Event('changeEvent');
   }
@@ -88,7 +88,7 @@ export class Slide {
       prev: index ? index - 1 : undefined,
       active: index,
       next: index === last ? undefined : index + 1,
-    }
+    };
   }
 
   changeSlide(index) {
@@ -101,7 +101,7 @@ export class Slide {
   }
 
   changeActiveClass() {
-    this.slideArray.forEach(item => item.element.classList.remove(this.activeClass));
+    this.slideArray.forEach((item) => item.element.classList.remove(this.activeClass));
     this.slideArray[this.index.active].element.classList.add(this.activeClass);
   }
 
@@ -136,7 +136,7 @@ export class Slide {
   }
 
   init() {
-    if(this.slide && this.wrapper) {
+    if (this.slide && this.wrapper) {
       this.bindEvents();
       this.transition(true);
       this.addSlideEvents();
@@ -184,7 +184,7 @@ export default class SlideNav extends Slide {
   }
 
   activeControlItem() {
-    this.controlArray.forEach(item => item.classList.remove(this.activeClass));
+    this.controlArray.forEach((item) => item.classList.remove(this.activeClass));
     this.controlArray[this.index.active].classList.add(this.activeClass);
   }
 

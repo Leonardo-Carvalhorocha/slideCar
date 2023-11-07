@@ -5,30 +5,24 @@
 export default function scrollSuave() {
   const menuItems = document.querySelectorAll('#menu a[href^="#"]');
 
-  menuItems.forEach((menu) => {
-    menu.addEventListener('click', handleReference);
-  });
-
-  function handleReference(event) {
-    event.preventDefault();
-    const hrefMenu = event.target.getAttribute('href');
-    const section = document.querySelectorAll(`${hrefMenu}`);
-    section.forEach((item) => {
-      leftTop(item);
-    })
+  function handleScrollSuave(top, left) {
+    window.scrollTo({ top, left, behavior: 'smooth' });
   }
 
   function leftTop(item) {
     const top = item.offsetTop - 20;
     const left = item.offsetLeft;
-    handleScrollSuave(top, left)
+    handleScrollSuave(top, left);
   }
 
-  function handleScrollSuave(top, left) {
-    window.scrollTo({
-      top: top,
-      left: left,
-      behavior: 'smooth',
-    });
+  function handleReference(event) {
+    event.preventDefault();
+    const hrefMenu = event.target.getAttribute('href');
+    const section = document.querySelectorAll(`${hrefMenu}`);
+    section.forEach((item) => leftTop(item));
   }
+
+  menuItems.forEach((menu) => {
+    menu.addEventListener('click', handleReference);
+  });
 }
