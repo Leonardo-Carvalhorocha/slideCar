@@ -18,6 +18,10 @@
   width: 140px;
 }
 
+.list-car nav ul li img {
+  height: auto;
+}
+
 #nav-car ul li {
   cursor: pointer;
   transition: .3s ease-in-out;
