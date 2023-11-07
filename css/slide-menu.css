@@ -11,7 +11,7 @@
 
 .slide-principal img {
   height: 100vh;
-  max-width: 100vw;
+  min-width: 100vw;
   max-width: none;
   transition: .9s ease-in-out;
   opacity: .2;
