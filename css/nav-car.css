@@ -38,6 +38,12 @@
   border-radius: 4px;
 }
 
+#img-main img{
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
+
 .titleCar {
   text-align: center;
   color: var(--p4);

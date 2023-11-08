@@ -20,6 +20,11 @@
   padding: 10px 24px;
 }
 
+.whatsapp img {
+  height: 14px;
+  max-width: 16px;
+}
+
 .whatsapp:hover {
   transform: scale(110%);
 }
