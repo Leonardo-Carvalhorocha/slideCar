@@ -10,13 +10,13 @@ menuMobile.init();
 
 carSelect();
 
-const slide = new SlideNav('.mobile-desktop', '.slide-wrapper');
-const slideMobileShow = new SlideNav('.mobile-slide-show', '.slide-wrapper-show');
+const slide = new SlideNav('.slide-container-desktop', '.slide-wrapper');
+const slideMobileShow = new SlideNav('.slide-container-mobile', '.slide-wrapper');
 slide.init();
 slide.addArrow('.prev', '.next');
 slide.addControl('.custom-controls');
 slideMobileShow.init();
-slideMobileShow.addControl('.custom-controls-mobile');
+slideMobileShow.addControl('.custom-controls');
 
 const slideDesktop = new slideMain('.slide-desktop img', '.slide-desktop');
 const slideMobile = new slideMain('.slide-mobile img', '.slide-mobile');

@@ -19,7 +19,9 @@
 }
 
 .list-car nav ul li img {
-  height: auto;
+  height: auto !important;
+  max-width: 100%;
+  object-fit: cover;
 }
 
 #nav-car ul li {
@@ -39,7 +41,7 @@
 }
 
 #img-main img{
-  height: auto;
+  height: auto !important;
   width: 100%;
   object-fit: cover;
 }
