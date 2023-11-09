@@ -184,10 +184,6 @@
   height: 40px;
 }
 
-.slide-mobile-container {
-  display: none !important;
-}
-
 .arrow-nav button.prev {
   transform: rotate(-180deg);
 }
@@ -205,11 +201,5 @@
   .slide li p a {
     padding: 8px 14px;
     font-size: 16px;
-  }
-  .slide-desktop-container {
-    display: none !important;
-  }
-  .slide-mobile-container {
-    display: grid !important;
   }
 }
