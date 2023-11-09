@@ -168,10 +168,6 @@
   object-fit: cover;
 }
 
-.custom-controls-mobile {
-  display: none;
-}
-
 .arrow-nav {
   display: flex;
   justify-content: space-around;
@@ -188,8 +184,8 @@
   height: 40px;
 }
 
-.slide-container-mobile {
-  display: none;
+.slide-mobile-container {
+  display: none !important;
 }
 
 .arrow-nav button.prev {
@@ -210,10 +206,10 @@
     padding: 8px 14px;
     font-size: 16px;
   }
-  .slide-container-desktop {
+  .slide-desktop-container {
     display: none !important;
   }
-  .slide-container-mobile {
-    display: flex;
+  .slide-mobile-container {
+    display: grid !important;
   }
 }
