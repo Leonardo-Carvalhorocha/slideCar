@@ -211,7 +211,7 @@
     font-size: 16px;
   }
   .mobile-desktop {
-    display: none;
+    display: none !important;
   }
   .mobile-slide-show {
     display: flex;
@@ -220,6 +220,6 @@
     display: flex;
   }
   .custom-controls {
-    display: none;
+    display: none !important;
   }
 }
