@@ -38,13 +38,16 @@ export class Slide {
   }
 
   onMove(event) {
-    const pointerPosition = (event.type === 'mousemove') ? event.clientX : event.changedTouches[0].clientX;
+    const pointerPosition =
+      event.type === 'mousemove'
+        ? event.clientX
+        : event.changedTouches[0].clientX;
     const finalPosition = this.updatePosition(pointerPosition);
     this.moveSlide(finalPosition);
   }
 
   onEnd(event) {
-    const movetype = (event.type === 'mouseup') ? 'mousemove' : 'touchmove';
+    const movetype = event.type === 'mouseup' ? 'mousemove' : 'touchmove';
     this.wrapper.removeEventListener(movetype, this.onMove);
     this.dist.finalPosition = this.dist.movePosition;
     this.transition(true);
@@ -62,7 +65,7 @@ export class Slide {
   }
 
   addSlideEvents() {
-    this.wrapper.addEventListener('mousedown', this.onStart);
+      this.wrapper.addEventListener('mousedown', this.onStart);
     this.wrapper.addEventListener('touchstart', this.onStart);
     this.wrapper.addEventListener('mouseup', this.onEnd);
     this.wrapper.addEventListener('touchend', this.onEnd);
@@ -101,7 +104,9 @@ export class Slide {
   }
 
   changeActiveClass() {
-    this.slideArray.forEach((item) => item.element.classList.remove(this.activeClass));
+    this.slideArray.forEach((item) =>
+      item.element.classList.remove(this.activeClass),
+    );
     this.slideArray[this.index.active].element.classList.add(this.activeClass);
   }
 
@@ -169,7 +174,9 @@ export default class SlideNav extends Slide {
     const control = document.createElement('ul');
     control.dataset.control = 'slide';
     this.slideArray.forEach((item, index) => {
-      control.innerHTML += `<li><a href="#slide${index + 1}">${index + 1}</a></li>`;
+      control.innerHTML += `<li><a href="#slide${index + 1}">${
+        index + 1
+      }</a></li>`;
     });
     this.wrapper.appendChild(control);
     return control;
@@ -184,12 +191,15 @@ export default class SlideNav extends Slide {
   }
 
   activeControlItem() {
-    this.controlArray.forEach((item) => item.classList.remove(this.activeClass));
+    this.controlArray.forEach((item) =>
+      item.classList.remove(this.activeClass),
+    );
     this.controlArray[this.index.active].classList.add(this.activeClass);
   }
 
   addControl(customControl) {
-    this.control = document.querySelector(customControl) || this.createControl();
+    this.control =
+      document.querySelector(customControl) || this.createControl();
     this.controlArray = [...this.control.children];
 
     this.activeControlItem();

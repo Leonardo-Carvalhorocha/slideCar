@@ -11,16 +11,6 @@
   text-transform: uppercase;
 }
 
-.diferenciais h1::before {
-  content: '';
-  width: 12px;
-  height: 4px;
-  border-radius: 2px;
-  margin-bottom: 6px;
-  background: linear-gradient(#DE911E, #AE6902);
-  display: inline-block;
-}
-
 .diferenciais-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

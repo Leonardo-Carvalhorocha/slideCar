@@ -21,7 +21,7 @@
 
 .slide li {
   flex-shrink: 0;
-  max-width: 80vw;
+  max-width: 60vw;
   margin: 0 10px;
 
   overflow: hidden;
@@ -41,16 +41,6 @@
   color: var(--p4);
   font-weight: 400;
   text-align: center;
-}
-
-.slide li h2::before {
-  content: '';
-  width: 12px;
-  height: 4px;
-  border-radius: 2px;
-  margin-bottom: 6px;
-  background: linear-gradient(#DE911E, #AE6902);
-  display: inline-block;
 }
 
 .slide li p {
@@ -169,7 +159,7 @@
 }
 
 .arrow-nav {
-  display: flex;
+  display: none;
   justify-content: space-around;
   margin: 20px 400px;
 }

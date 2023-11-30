@@ -1,6 +1,9 @@
+.car-bg {
+  background: var(--p0);
+}
+
 #container-car {
   display: flex;
-  background: var(--p0);
   justify-content: center;
   max-width: 1600px;
   margin: 0px auto;
