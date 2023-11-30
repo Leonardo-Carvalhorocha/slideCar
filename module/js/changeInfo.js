@@ -7,7 +7,6 @@ export default function changeInfo() {
       if (li.classList.contains('active')) {
         const hrefListaPages = li.children[2].getAttribute('href');
         btnCar.setAttribute('href', hrefListaPages);
-        btnCar.innerText = `Ver ${li.children[1].innerText}`;
       }
     });
   }
