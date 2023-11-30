@@ -65,7 +65,7 @@ export class Slide {
   }
 
   addSlideEvents() {
-      this.wrapper.addEventListener('mousedown', this.onStart);
+    this.wrapper.addEventListener('mousedown', this.onStart);
     this.wrapper.addEventListener('touchstart', this.onStart);
     this.wrapper.addEventListener('mouseup', this.onEnd);
     this.wrapper.addEventListener('touchend', this.onEnd);
@@ -74,7 +74,8 @@ export class Slide {
   // Slides config
 
   slidePosition(slide) {
-    const margin = (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
+    const margin =
+      (this.wrapper.offsetWidth - slide.offsetWidth) / 2;
     return -(slide.offsetLeft - margin);
   }
 

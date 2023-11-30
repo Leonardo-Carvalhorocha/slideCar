@@ -186,6 +186,9 @@
   .arrow-nav {
     display: none;
   }
+  .slide li  {
+    max-width: 80vw;
+  }
 }
 
 @media (max-width: 800px) {
