@@ -65,7 +65,9 @@ export class Slide {
   }
 
   addSlideEvents() {
-    this.wrapper.addEventListener('mousedown', this.onStart);
+    if (window.matchMedia('(max-width: 800px)').matches) {
+      this.wrapper.addEventListener('mousedown', this.onStart);
+    }
     this.wrapper.addEventListener('touchstart', this.onStart);
     this.wrapper.addEventListener('mouseup', this.onEnd);
     this.wrapper.addEventListener('touchend', this.onEnd);
@@ -161,14 +163,18 @@ export default class SlideNav extends Slide {
   }
 
   addArrow(prev, next) {
-    this.prevElement = document.querySelector(prev);
-    this.nextElement = document.querySelector(next);
+    this.prevElement = document.querySelectorAll(prev);
+    this.nextElement = document.querySelectorAll(next);
     this.addArrowEvent();
   }
 
   addArrowEvent() {
-    this.prevElement.addEventListener('click', this.activePrevSlide);
-    this.nextElement.addEventListener('click', this.activeNextSlide);
+    this.prevElement.forEach((btn) => {
+      btn.addEventListener('click', this.activePrevSlide);
+    })
+    this.nextElement.forEach((btn) => {
+      btn.addEventListener('click', this.activeNextSlide);
+    })
   }
 
   createControl() {

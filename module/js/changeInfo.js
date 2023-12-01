@@ -1,5 +1,5 @@
 export default function changeInfo() {
-  const li = document.querySelectorAll('.slide li');
+  const li = document.querySelectorAll('.slide-container-mobile li');
   const btnCar = document.querySelector('.btn-automovel a');
 
   function listaLi() {

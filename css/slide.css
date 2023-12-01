@@ -77,7 +77,7 @@
 }
 
 .btn-automovel {
-  display: grid;
+  display: none;
   justify-content: center;
 }
 
@@ -156,22 +156,26 @@
 .custom-controls-mobile li img {
   height: 100%;
   object-fit: cover;
+  position: relative;
 }
 
 .arrow-nav {
-  display: none;
+  display: flex;
+  gap: 820px;
   justify-content: space-around;
-  margin: 20px 400px;
+  position: absolute;
+  margin: 20px 30px;
+  top: 240px;
 }
 
 .arrow-nav button {
   cursor: pointer;
   border: none;
   border-radius: 4px;
-  background: #000 url('../img/icons/arrow.svg') center center no-repeat;
+  background: #FFF url('../img/icons/arrow.svg') center center no-repeat;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 }
 
 .arrow-nav button.prev {
@@ -182,10 +186,29 @@
   display: none;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1350px) {
   .arrow-nav {
-    display: none;
+    display: flex;
+    gap: 620px;
+    top: 240px;
   }
+}
+
+@media (max-width: 1250px) {
+  .arrow-nav {
+    display: flex;
+    gap: 580px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .arrow-nav {
+    display: flex;
+    gap: 480px;
+  }
+}
+
+@media (max-width: 950px) {
   .slide li  {
     max-width: 80vw;
   }
@@ -205,4 +228,8 @@
   .slide-container-mobile {
     display: flex;
   }
+  .btn-automovel {
+    display: grid;
+  }
 }
+
