@@ -1,0 +1,66 @@
+.diferencias-container {
+  background: var(--p0);
+  margin-bottom: 60px;
+  margin-top: 60px;
+  padding: 60px 0;
+}
+
+.diferencias-container {
+  text-align: center;
+}
+
+.diferencias-container h1 {
+  color: var(--p4);
+}
+
+
+.diferencias-container p {
+  color: var(--p2);
+}
+
+.diferenciais-card {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.diferenciais {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+}
+
+.diferenciais img {
+  border-radius: 6px;
+}
+
+.diferencias h1 {
+  position: relative;
+}
+
+.diferenciais span img {
+  position: absolute;
+  margin-left: 580px;
+  margin-top: -48px;
+}
+
+@media (max-width: 980px) {
+  .diferenciais {
+    flex-wrap: wrap;
+    text-align: start;
+    padding: 0 40px;
+  }
+
+  .diferenciais span img {
+    position: absolute;
+    margin-left: 280px;
+    margin-top: -48px;
+  }
+}
+
+@media (max-width: 980px) {
+  .diferencias-container {
+    text-align: end;
+  }  
+}

@@ -1,0 +1,140 @@
+header {
+  background: var(--p0);
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  min-width: 100vw;
+  margin-top: 44px;
+}
+
+.header-redes {
+  background: var(--p0);
+  min-width: 100vw;
+  padding: 10px 10px;
+  position: fixed;
+  z-index: 200;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.top {
+  padding-top: 60px;
+}
+
+.redes-sociais-redes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.redes-sociais-header {
+  display: flex;
+  gap: 10px;
+  padding: 0 40px;
+  width: 100px;
+}
+
+.endereco-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.endereco-header ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+[data-menu='list'] {
+  gap: 20px;
+  padding: 16px;
+  display: flex;
+}
+
+[data-menu='list'] a {
+  color: var(--p4);
+  font-size: 22px;
+  position: relative;
+}
+
+[data-menu='list'] a::before {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: var(--p4);
+  position: absolute;
+  display: inline-block;
+  top: 30px;
+  transition: .3s ease-in-out;
+}
+
+[data-menu='list'] a:hover::before {
+  width: 100%;
+}
+
+#btn-car {
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#btn-car button {
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  background: linear-gradient(var(--p2), var(--p3));
+}
+
+#btn-car button:hover {
+  transform: scale(110%);
+  border-radius: 4px;
+}
+
+#btn-car button a {
+  color: var(--p0);
+  text-transform: uppercase;
+  font-family: var(--fontFamily);
+  font-weight: 700;
+}
+
+@media(max-width: 700px) {
+  #btn-car {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .redes-sociais-redes {
+    justify-content: center;
+  }
+
+  .header-redes {
+    font-size: 14px;
+  }
+
+  .endereco-header {
+    justify-content: center;
+    display: none;
+  }
+
+  #btn-car button {
+    padding: 8px 18px;
+  }
+}

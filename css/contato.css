@@ -1,0 +1,30 @@
+.contato-whatsapp {
+  display: grid;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.whatsapp {
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+  background: linear-gradient(#1D8A14, #1D8A14);
+  box-shadow: none;
+}
+
+.whatsapp a {
+  display: flex;
+  gap: 6px;
+  color: #042105;
+  padding: 10px 24px;
+}
+
+.whatsapp img {
+  height: 14px;
+  max-width: 16px;
+}
+
+.whatsapp:hover {
+  transform: scale(110%);
+}

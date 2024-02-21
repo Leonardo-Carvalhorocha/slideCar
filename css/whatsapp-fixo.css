@@ -1,0 +1,17 @@
+.whatsapp-fixo {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: .3s ease-in-out;
+}
+
+.whatsapp-fixo:hover {
+  transform: scale(140%);
+}
+
+@media(max-width: 600px) {
+  .whatsapp-fixo {
+    bottom: 14px;
+    right: 14px;
+  }
+}
