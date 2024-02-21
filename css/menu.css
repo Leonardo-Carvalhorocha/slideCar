@@ -37,6 +37,28 @@ header {
   width: 100px;
 }
 
+.endereco-header a {
+  color: var(--p4);
+}
+
+.header-redes.remove,
+.menu-header.remove {
+  animation: slideDown 1s ease-in-out;
+  display: none;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
 .endereco-header {
   display: flex;
   flex-wrap: wrap;

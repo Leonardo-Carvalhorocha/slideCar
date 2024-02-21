@@ -8,12 +8,13 @@
   margin: 0 auto;
   height: 200px;
   padding: 40px 16px;
+  margin-bottom: 60px;
 }
 
-.empresa-container h2, 
+.empresa-container h2,
 .empresa-container p,
 .empresa-container span {
-    font-family: var(--fontFamily);
+  font-family: var(--fontFamily);
 }
 
 .empresa-container h2 {
@@ -47,7 +48,7 @@
 }
 
 @media(max-width: 860px) {
-  .empresa-container{
+  .empresa-container {
     grid-template-columns: 1fr;
     height: 600px;
   }

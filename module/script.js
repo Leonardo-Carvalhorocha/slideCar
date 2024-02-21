@@ -5,6 +5,7 @@ import slideMain from './js/slide-main.js';
 import scrollSuave from './js/scrollSuave.js';
 import changeInfo from './js/changeInfo.js';
 import selectMarcaCarro from './js/selectMarcaCarro.js';
+import scrollMenu from './js/scroll-menu.js';
 
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
 menuMobile.init();
@@ -28,3 +29,4 @@ scrollSuave();
 changeInfo();
 
 selectMarcaCarro();
+scrollMenu()
