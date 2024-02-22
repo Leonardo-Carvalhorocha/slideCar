@@ -8,7 +8,7 @@
   margin: 0 auto;
   height: 200px;
   padding: 40px 16px;
-  margin-bottom: 60px;
+  margin-bottom: 260px;
 }
 
 .empresa-container h2,
@@ -37,7 +37,7 @@
   margin-right: 4px;
 }
 
-.empresa-container span::before {
+/* .empresa-container span::before {
   content: url('../img/icons/aspas.svg');
   width: 100%;
   font-size: 32px;
@@ -45,6 +45,28 @@
   display: block;
   top: -20px;
   left: -16px;
+} */
+
+.video-empresa video {
+  height: 70%;
+  width: 70%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.fundo-588 {
+  position: relative;
+}
+
+.fundo-588 h2::after {
+  content: '588';
+  display: block;
+  position: absolute;
+  opacity: .08;
+  font-size: 60px;
+  top: -10px;
+  margin-left: -10px;
+  background: var(--p2);
 }
 
 @media(max-width: 860px) {
