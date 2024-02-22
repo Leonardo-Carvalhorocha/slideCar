@@ -74,4 +74,8 @@
     grid-template-columns: 1fr;
     height: 600px;
   }
+
+  .video-empresa video {
+    max-width: 150%;
+  }
 }
