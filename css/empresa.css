@@ -18,8 +18,13 @@
 }
 
 .empresa-container h2 {
-  font-size: 32px;
+  font-size: 38px;
   position: relative;
+}
+
+.empresa-container p,
+.empresa-container span {
+  font-size: 18px;
 }
 
 .empresa-list {
@@ -80,5 +85,10 @@
 
   .fundo-588 h2::after {
     margin-left: 10px;
+  }
+
+  .empresa-container p,
+  .empresa-container span {
+    font-size: 16px;
   }
 }
