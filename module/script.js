@@ -20,8 +20,8 @@ slide.addControl('.custom-controls');
 slideMobileShow.init();
 slideMobileShow.addControl('.custom-controls');
 
-const slideDesktop = new slideMain('.slide-desktop img', '.slide-desktop');
-const slideMobile = new slideMain('.slide-mobile img', '.slide-mobile');
+const slideDesktop = new slideMain('.slide-desktop img', '.slide-desktop', '.voltar', '.seguinte');
+const slideMobile = new slideMain('.slide-mobile img', '.slide-mobile', '.voltar', '.seguinte');
 slideDesktop.init();
 slideMobile.init();
 

@@ -37,14 +37,24 @@ header {
   width: 100px;
 }
 
-.endereco-header a {
-  color: var(--p4);
+.endereco-header span a {
+  color: var(--p4) !important;
 }
 
 .header-redes.remove,
 .menu-header.remove {
   animation: slideDown .3s ease-in-out;
   opacity: 0;
+}
+
+.redes-sociais-header img,
+.footer-redes img {
+  transition: .3s ease-in-out;
+}
+
+.redes-sociais-header img:hover,
+.footer-redes img:hover {
+  transform: scale(120%);
 }
 
 .header-redes, 

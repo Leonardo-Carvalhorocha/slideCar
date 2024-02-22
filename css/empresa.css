@@ -59,14 +59,13 @@
 }
 
 .fundo-588 h2::after {
-  content: '588';
+  content: url('../img/logo/Icone588cinza.png');
   display: block;
   position: absolute;
-  opacity: .08;
-  font-size: 60px;
-  top: -10px;
-  margin-left: -10px;
-  background: var(--p2);
+  opacity: .3;
+  font-size: 100px;
+  top: -50px;
+  margin-left: -35px;
 }
 
 @media(max-width: 860px) {
@@ -77,5 +76,9 @@
 
   .video-empresa video {
     max-width: 150%;
+  }
+
+  .fundo-588 h2::after {
+    margin-left: 10px;
   }
 }
