@@ -55,10 +55,10 @@
 
 #fundo-logo span::after {
   content: '';
-  background-image: url('../img/logo/logo-grande.png');
+  background-image: url('../img/logo/Logo_588_whiteB.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   width: 150%;
   height: 150%;
   display: block;
