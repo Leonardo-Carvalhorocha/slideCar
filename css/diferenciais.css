@@ -12,7 +12,7 @@
 
 .title-diferenciais {
   color: var(--p4);
-  font-size: 32px;
+  font-size: 40px;
   z-index: 2;
 }
 
@@ -24,7 +24,7 @@
   position: absolute;
   opacity: .3;
   top: 40px;
-  margin-left: -140px;
+  margin-left: -162px;
   z-index: 1;
 }
 
