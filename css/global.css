@@ -64,3 +64,6 @@ a {
   border-bottom: 2px solid ;
 }
 
+html {
+  scroll-behavior: smooth;
+}

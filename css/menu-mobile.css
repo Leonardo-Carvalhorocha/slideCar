@@ -60,7 +60,7 @@
   }
 
   .nav-container img {
-    max-width: 240px;
+    max-width: 100%;
   }
 }
 
