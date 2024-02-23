@@ -49,7 +49,27 @@
   margin-top: 10px;
 }
 
-@media(max-width: 860px) {
+#fundo-logo {
+  position: relative;
+}
+
+#fundo-logo span::after {
+  content: '';
+  background-image: url('../img/logo/logo-grande.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 150%;
+  height: 150%;
+  display: block;
+  position: absolute;
+  top: 40px;
+  left: -200px;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+@media (max-width: 860px) {
   .empresa-container {
     grid-template-columns: 1fr;
     height: 540px;
@@ -66,5 +86,14 @@
   .empresa-container p,
   .empresa-container span {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 800px) {
+  #fundo-logo span::after {
+    width: 80%;
+    height: 80%;
+    top: 60px;
+    left: 20px;
   }
 }

@@ -10,7 +10,7 @@ header {
 .header-redes {
   background: var(--p0);
   min-width: 100vw;
-  padding: 10px 10px;
+  padding: 0px 0px;
   position: fixed;
   z-index: 200;
   color: white;
@@ -60,6 +60,12 @@ header {
   animation: slideReturn 0.3s ease-in-out;
 }
 
+#logo {
+  position: absolute;
+  left: 1px;
+  top: -40px;
+}
+
 @keyframes slideDown {
   from {
     opacity: 1;
@@ -99,12 +105,13 @@ header {
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
   flex-wrap: wrap;
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 16px;
+  position: relative;
 }
 
 [data-menu='list'] {

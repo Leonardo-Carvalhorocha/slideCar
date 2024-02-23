@@ -1,13 +1,13 @@
-[data-menu="button"] {
+[data-menu='button'] {
   display: none;
 }
 
 @media (max-width: 700px) {
-  [data-menu="button"] {
+  [data-menu='button'] {
     display: flex;
     background: #222;
     border: none;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
     text-transform: uppercase;
     font-weight: 700;
@@ -19,7 +19,7 @@
     z-index: 300;
   }
 
-  [data-menu="button"]::before {
+  [data-menu='button']::before {
     margin-right: 4px;
     content: '';
     display: inline-block;
@@ -27,10 +27,10 @@
     width: 12px;
     background: #fff;
     box-shadow: 0 4px #fff, 0 -4px #fff;
-    transition: transform .3s;
+    transition: transform 0.3s;
   }
 
-  [data-menu="button"].active::before {
+  [data-menu='button'].active::before {
     transform: rotate(90deg);
   }
 
@@ -42,7 +42,7 @@
     z-index: 200;
     top: 40px;
     padding: 40px;
-    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     margin-left: -60px;
     border-radius: 4px;
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.404);
@@ -51,7 +51,7 @@
   #menu.active {
     display: grid;
     gap: 20px;
-    animation: show-right .3s forwards;
+    animation: show-right 0.3s forwards;
   }
 
   .dropdown-menu {
@@ -60,7 +60,7 @@
   }
 
   .nav-container img {
-    max-width: 100%;
+    max-width: 120px;
   }
 }
 
