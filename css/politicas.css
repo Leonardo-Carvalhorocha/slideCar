@@ -1,0 +1,30 @@
+.politica-container div {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.politica-container h2 {
+  font-size: 32px;
+}
+
+.politica-container h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.politica-container dt {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.politica-container dd {
+  margin-bottom: 8px;
+}
+
+.politica-container ul li{
+  margin-top: 20px;
+}
