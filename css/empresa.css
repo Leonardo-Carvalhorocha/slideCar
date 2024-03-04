@@ -87,6 +87,10 @@
   .empresa-container span {
     font-size: 16px;
   }
+
+  #fundo-logo span::after {
+    background-size: 250px;
+  }
 }
 
 @media (max-width: 800px) {
