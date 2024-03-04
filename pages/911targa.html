@@ -17,48 +17,38 @@
 <body>
 
   <div class="header-redes">
-    <div class="redes-sociais-redes">
-      <div class="endereco-header">
-        <ul>
-          <li>
-            <img src="../img/icons/telephone.svg" alt="endereço">
-            <span><a href="tel:++555123133333">+55 51 2313 3333</a></span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <img src="../img/icons/envelope.svg" alt="email">
-            <span>
-              <a href="mailto:atendimento@intactoblindagens.com.br">atendimento@intactoblindagens.com.br</a>
-            </span>
-          </li>
-        </ul>
-      </div>
+    <div class="container-redes">
       <div class="redes-sociais-header">
+        <a href="tel:++555123133333">
+          <img src="../img/icons/telephone.svg" alt="telefone" width="60" height="60">
+        </a>
+        <a href="mailto:atendimento@intactoblindagens.com.br">
+          <img src="../img/icons/envelope.svg" alt="email" width="60" height="60">
+        </a>
         <a href="https://www.instagram.com/intactoblindagens" target="_blank">
-          <img src="../img/icons/instagram.svg" width="32" height="32" alt="Instagram">
+          <img src="../img/icons/instagram.svg" width="60" height="60" alt="Instagram">
         </a>
         <a href="https://www.facebook.com/IntactoBlindagens" target="_blank">
-          <img src="../img/icons/facebook.svg" width="32" height="32" alt="Facebook">
+          <img src="../img/icons/facebook.svg" width="60" height="60" alt="Facebook">
         </a>
         <a href="https://api.whatsapp.com/send?phone=555123133333" target="_blank">
-          <img src="../img/icons/whatsapp.svg" width="32" height="32" alt="whatsapp">
+          <img src="../img/icons/whatsapp.svg" width="60" height="60" alt="whatsapp">
         </a>
       </div>
     </div>
   </div>
 
-  <header>
+
+  <header class="menu-header" aria-label="menu">
     <div class="nav-container">
-      <a href="../index.html"><img src="../img/logo/logo.png" alt="" width="500" height="30"></a>
-      <nav class="menu" data-menu="suave" aria-label="menu">>
+      <a id="logo" href="../index.html"><img src="../img/logo/logo.png" alt="logo" height="80px"></a>
+      <nav class="menu" data-menu="suave" aria-label="">
         <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
         <ul data-menu="list" id="menu">
-          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../index.html#inicio">Inicio</a></li>
           <li><a href="../index.html#empresa">Empresa</a></li>
-          <li><a href="../index.html#diferenciais">Diferencias</a></li>
           <li><a href="../index.html#galeria">Galeria</a></li>
-          <li><a href="../index.html#servicos">Serviços</a></li>
+          <li><a href="../index.html#diferenciais">Diferencias</a></li>
           <li><a href="../index.html#contato">Contato</a></li>
         </ul>
       </nav>
