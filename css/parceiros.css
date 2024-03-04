@@ -62,4 +62,8 @@
   .parceiros ul li{
     gap: 40px;
   }
+
+  .parceiros ul {
+    flex-direction: column;
+  }
 }
