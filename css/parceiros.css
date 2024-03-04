@@ -1,26 +1,47 @@
 .parceiros-bg {
-  background-color: var(--p0);
-  margin-top: 60px;
-  /* height: 300px; */
-  /* padding: 40px 0 0 0; */
+  background-color: var(--p4);
+  margin-top: 40px;
+  margin-bottom: 80px;
+  height: auto;
+  padding: 40px 0 0 0;
 }
 
 .parceiros ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 24px;
   position: relative;
 }
 
 .parceiros ul li:nth-child(n + 2)::after {
   content: '';
   width: 2px;
-  height: 60px;
+  height: 80px;
   position: absolute;
-  background: #fff;
+  background: var(--p3);
   top: 40px;
-  margin-left: -22px;
+  margin-left: -12px;
+}
+
+.parceiros ul::before {
+  content: '';
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  background: var(--p3);
+  top: 20px;
+  margin-left: 0px;
+}
+
+.parceiros ul::after {
+  content: '';
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  background: var(--p3);
+  top: 140px;
+  margin-left: 1px;
 }
 
 .parceiros ul {
@@ -33,11 +54,12 @@
 }
 
 .parceiros-title {
-  color: var(--p4);
+  color: var(--p0);
   font-size: 40px;
   z-index: 2;
   text-align: center;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .parceiros-title::after {
@@ -59,7 +81,7 @@
     top: 0;
   }
 
-  .parceiros ul li{
+  .parceiros ul li {
     gap: 40px;
   }
 
