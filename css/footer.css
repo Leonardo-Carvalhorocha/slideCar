@@ -3,14 +3,14 @@
 }
 
 .footer-container {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   align-items: start;
-   color: var(--p4);
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 80px 20px 0px 20px;
-   gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  color: var(--p4);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 20px 0px 20px;
+  gap: 20px;
 }
 
 .footer-container a,
@@ -64,14 +64,20 @@
   margin-bottom: 20px;
 }
 
+.footer-container p a {
+  text-align: start;
+}
+
 @media(max-width: 780px) {
   .footer-bg {
     display: grid;
     justify-content: center;
   }
+
   .footer-container {
     grid-template-columns: 1fr;
   }
+
   .footer-informacoes {
     grid-column: 1;
   }

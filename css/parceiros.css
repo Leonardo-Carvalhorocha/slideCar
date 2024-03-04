@@ -1,0 +1,66 @@
+.parceiros-bg {
+  background-color: var(--p0);
+  margin-top: 60px;
+  /* height: 300px; */
+  /* padding: 40px 0 0 0; */
+}
+
+.parceiros ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+}
+
+.parceiros ul li:nth-child(n + 2)::after {
+  content: '';
+  width: 2px;
+  height: 60px;
+  position: absolute;
+  background: #fff;
+  top: 40px;
+  margin-left: -22px;
+}
+
+.parceiros ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.parceiros ul li img {
+  max-width: 200px;
+}
+
+.parceiros-title {
+  color: var(--p4);
+  font-size: 40px;
+  z-index: 2;
+  text-align: center;
+  position: relative;
+}
+
+.parceiros-title::after {
+  content: url('../img/logo/Icone588cinza.png');
+  display: inline-block;
+  z-index: -1;
+  margin-left: -180px;
+  top: -40px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+@media (max-width: 890px) {
+  .parceiros ul li:nth-child(n + 2)::after {
+    width: 0;
+    height: 0;
+    position: absolute;
+    background: #000;
+    top: 0;
+    margin-left: -0;
+  }
+
+  .parceiros ul li{
+    gap: 40px;
+  }
+}
