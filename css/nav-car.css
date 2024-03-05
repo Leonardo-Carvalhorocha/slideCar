@@ -110,7 +110,7 @@
   }
 
   #container-car {
-    justify-content: center;
+    justify-content: start;
   }
 
   #img-main img {
@@ -124,12 +124,16 @@
 
   .lista-detalhes-bg {
     height: 400px;
-    margin-top: 20px;
+    margin-top: 0;
   }
 }
 
-@media(max-width: 600px) {
+@media(max-width: 350px) {
   #img-main img {
     height: 220px;
+  }
+
+  #container-car {
+    justify-content: center;
   }
 }
